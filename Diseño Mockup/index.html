@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel='stylesheet' href='css/login.css' />
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <title>Login ACME S.A.S</title>
+</head>
+<body>
+    <div class="titulo">ACME S.A.S</div>
+
+    <div class="container1">
+        
+        <div class="containerFormulario">
+            <form>
+                <div class="usuario">
+                    <label for="name"><img src="images/usuario2.svg"></label>
+                    <input type="text" id="nameusu" name="nameusu" placeholder="Ingrese su nombre">
+                </div>
+                <div class="password">
+                    <label for="password"><img src="images/candado-cerrado.svg"></label>
+                    <input type="password" id="password" name="password" placeholder="Ingrese su contraseña">
+                </div>
+                <div class="ventana" id="vent">
+                    <form action="">
+                        <h2>¿En qué modalidad desea ingresar?</h2>
+                        <input type="button" class="aceptar" value="Administrador" onclick="location.href='admin/a-listar-productos.html'" />
+                        <input type="button" class="imprimir" value="Operario" onclick="location.href='operario/o-listar-productos.html'" />
+                    </form>
+                </div>
+                <form action="javascript:abrir()">
+                    <input class="boton" type="submit" value="Iniciar Sesión">
+                </form>
+            </form>
+        </div>
+    </div>
+    <script src="admin/js/javascript.js"></script>
+</body>
+</html>
